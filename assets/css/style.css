@@ -1437,7 +1437,7 @@ img {
   .nav-tabs.open { display: flex; }
   .nav-tabs button { width: 100%; text-align: left; }
   .nav-toggle { display: flex; }
-  .dev-ad-btn { font-size: 0.7rem; padding: 6px 12px; }
+  .dev-ad-btn { font-size: 0.66rem; padding: 6px 10px; }
   .form-row { grid-template-columns: 1fr; }
   .value-list { grid-template-columns: 1fr; }
   .hero-stats { gap: 26px; }
