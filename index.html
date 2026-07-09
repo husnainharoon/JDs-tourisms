@@ -49,7 +49,7 @@
     </nav>
     <!-- Nav buttons scroll-link to sections below; site is a single continuous page -->
 
-    <a class="dev-ad-btn" href="https://wa.me/923234581785" target="_blank" rel="noopener">Start Your Website Today</a>
+    <button type="button" class="dev-ad-btn" id="devAdOpenHeader">Start Your Website Today</button>
 
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -614,12 +614,25 @@
       <span>Let's Travel Together! ♥</span>
     </div>
 
-    <a class="dev-credit" href="https://wa.me/923234581785" target="_blank" rel="noopener">
+    <button type="button" class="dev-credit" id="devAdOpen">
       <img src="assets/images/web-dev-ad.gif" alt="Website Design &amp; Development services, starting from $10">
       <span>Website design &amp; development — starting from $10. Message us to get yours built.</span>
-    </a>
+    </button>
   </div>
 </footer>
+
+<div class="ad-modal" id="adModal">
+  <div class="ad-modal-box">
+    <button class="ad-modal-close" id="adModalClose" aria-label="Close">✕</button>
+    <img class="ad-modal-img" src="assets/images/web-dev-ad.gif" alt="Website Design &amp; Development services, starting from $10">
+    <div class="ad-modal-body">
+      <h3>Website Design &amp; Development</h3>
+      <p class="ad-modal-tagline">Premium Quality · Affordable Prices · Fast Delivery</p>
+      <p class="ad-modal-price">Starting from just $10</p>
+      <a class="btn btn-primary" href="https://wa.me/923234581785" target="_blank" rel="noopener">Message on WhatsApp →</a>
+    </div>
+  </div>
+</div>
 
 <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 

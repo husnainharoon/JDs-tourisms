@@ -148,6 +148,31 @@
     if (e.key === 'ArrowRight') openLightbox(lightboxIndex + 1);
   });
 
+  const adModal = document.getElementById('adModal');
+  const adModalClose = document.getElementById('adModalClose');
+  const devAdOpen = document.getElementById('devAdOpen');
+  const devAdOpenHeader = document.getElementById('devAdOpenHeader');
+
+  function openAdModal() {
+    adModal.classList.add('open');
+  }
+
+  function closeAdModal() {
+    adModal.classList.remove('open');
+  }
+
+  if (adModal) {
+    devAdOpen?.addEventListener('click', openAdModal);
+    devAdOpenHeader?.addEventListener('click', openAdModal);
+    adModalClose.addEventListener('click', closeAdModal);
+    adModal.addEventListener('click', (e) => {
+      if (e.target === adModal) closeAdModal();
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && adModal.classList.contains('open')) closeAdModal();
+    });
+  }
+
   const WHATSAPP_NUMBER = '923117888373';
   const contactForm = document.getElementById('contactForm');
   const formStatus = document.getElementById('formStatus');
