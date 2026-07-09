@@ -225,6 +225,22 @@ img {
   color: #fff;
 }
 
+.dev-ad-btn {
+  background: var(--sunrise-amber);
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 50px;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: filter var(--transition), transform var(--transition);
+}
+.dev-ad-btn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -1421,6 +1437,7 @@ img {
   .nav-tabs.open { display: flex; }
   .nav-tabs button { width: 100%; text-align: left; }
   .nav-toggle { display: flex; }
+  .dev-ad-btn { font-size: 0.7rem; padding: 6px 12px; }
   .form-row { grid-template-columns: 1fr; }
   .value-list { grid-template-columns: 1fr; }
   .hero-stats { gap: 26px; }
